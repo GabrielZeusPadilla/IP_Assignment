@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 
 <html lang="en">
@@ -5,7 +6,6 @@
 <head>
 
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="portfolioStylesheet.css" rel="stylesheet">
@@ -18,527 +18,127 @@
 
 <body>
 
-<div class="header">
+    <div class="header">
 
-    <img src="myPic.png" alt="Gabriel Zeus S. Padilla">
+        <img src="myPic.png" alt="Gabriel Zeus S. Padilla">
 
-    <h1>Gabriel Zeus S. Padilla</h1>
+        <h1>Gabriel Zeus S. Padilla</h1>
 
-    <h3>Aspiring Game Developer</h3>
+        <h3>Aspiring Game Developer</h3>
 
-    <button id="inquireButton">
-        Inquire My Services
-    </button>
-
-</div>
-
-
-<div id="inquiryModal" class="modal">
-
-    <div class="modal-content">
-
-        <span class="close-button">&times;</span>
-
-        <div id="inquiryContent">
-
-            <h2>Inquire My Services</h2>
-
-            <p>
-                Interested in working with me? Fill out the form below
-                and provide some details about your project.
-            </p>
-
-            <form id="inquiryForm">
-
-                <label for="name">
-                    Full Name
-                </label>
-
-                <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="Enter your name"
-                    required
-                >
-
-
-                <label for="email">
-                    Email Address
-                </label>
-
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Enter your email"
-                    required
-                >
-
-
-                <label for="service">
-                    Service
-                </label>
-
-                <select id="service" name="service" required>
-
-                    <option value="">
-                        Select a service
-                    </option>
-
-                    <option value="website">
-                        Website Development
-                    </option>
-
-                    <option value="web_design">
-                        Web Design
-                    </option>
-
-                    <option value="game_development">
-                        Consultation
-                    </option>
-
-                    <option value="other">
-                        Other
-                    </option>
-
-                </select>
-
-
-                <label for="message">
-                    Project Details
-                </label>
-
-                <textarea
-                    id="message"
-                    name="message"
-                    placeholder="Tell me about your project..."
-                    rows="5"
-                    required
-                ></textarea>
-
-
-                <button
-                    type="submit"
-                    class="submit-button"
-                >
-                    Send Inquiry
-                </button>
-
-            </form>
-
-        </div>
-
-
-        <div id="successMessage">
-
-            <h2>Thank You for Your Inquiry!</h2>
-
-            <p>
-                Your inquiry has been received successfully. I will review
-                your request and contact you through the email address you
-                provided.
-            </p>
-
-            <p>
-                I appreciate your interest and look forward to getting in touch
-                with you.
-            </p>
-
-        </div>
-
-    </div>
-
-</div>
-
-
-<div class="flex_body">
-
-
-    <div id="section01">
-
-        <h2>About Me</h2>
-
-        <p>
-            I am an aspiring game developer and IT student who is interested in creating games
-            and learning new technologies. I enjoy working with computers, programming, and
-            designing digital experiences. I particularly enjoy tackling new concepts and theories,
-            taking the time to understand how and why things work and how they can be applied in
-            practical situations.
-
-            I also value communication and collaboration when working with others.
-            I am comfortable sharing ideas, listening to different perspectives,
-            and working with people from different backgrounds and skill levels.
-            I believe that good communication and teamwork are essential to turning ideas into
-            successful projects, and I am always willing to learn from others while contributing
-            my own skills and ideas.
-        </p>
+        <button id="inquireButton">
+            Inquire My Services
+        </button>
 
     </div>
 
 
-    <div id="section02">
+    <div id="inquiryModal" class="modal">
 
-        <h2>My Skills</h2>
+        <div class="modal-content">
 
-        <div class="skills">
+            <span class="close-button">&times;</span>
 
-            <div>HTML</div>
-            <div>CSS</div>
-            <div>JavaScript</div>
-            <div>Java</div>
-            <div>C#</div>
-            <div>PHP</div>
-            <div>Python</div>
+            <div id="inquiryContent">
 
-        </div>
-
-    </div>
-
-
-    <div id="section03">
-
-        <h2>My Education</h2>
-
-        <div class="education">
-
-            <div class="education-item">
-
-                <div class="education-entry">
-
-                    <span class="education-year">
-                        2018 - 2022
-                    </span>
-
-                    <h3>
-                        Junior High School
-                    </h3>
-
-                    <p class="education-school">
-                        Los Baños National High School - Batong Malake
-                    </p>
-
-                </div>
-
-
-                <div class="education-entry">
-
-                    <span class="education-year">
-                        2022 - 2024
-                    </span>
-
-                    <h3>
-                        Senior High School
-                    </h3>
-
-                    <h4>
-                        Information and Communication Technology
-                    </h4>
-
-                    <p class="education-school">
-                        Laguna State Polytechnic University Senior High School -
-                        Los Baños Campus
-                    </p>
-
-                </div>
-
-
-                <div class="education-entry">
-
-                    <span class="education-year">
-                        2024 - Present
-                    </span>
-
-                    <h3>
-                        College
-                    </h3>
-
-                    <h4>
-                        Bachelor of Science in Information Technology -
-                        Web and Mobile Application Development
-                    </h4>
-
-                    <p class="education-school">
-                        Laguna State Polytechnic University - Los Baños Campus
-                        <br>
-                        College of Computer Science
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-    <div id="section04">
-
-        <h2>My Certificates</h2>
-
-        <div class="certificates">
-
-
-            <div class="certificate">
-
-                <div class="certificate-image">
-
-                    <img
-                        src="Certificate01_page-0001.jpg"
-                        alt="Rappler's #ScamAlert Forum Certificate"
-                    >
-
-                </div>
-
-
-                <div class="certificate-info">
-
-                    <span class="certificate-number">
-                        01
-                    </span>
-
-                    <h3>
-                        Rappler's #ScamAlert Forum
-                    </h3>
-
-                    <p>
-                        This certificate represents my participation in Rappler's
-                        #ScamAlert forum, which focused on increasing awareness about
-                        online scams and digital fraud. Through the forum, I gained a
-                        better understanding of how scams can be presented online,
-                        the warning signs to look out for, and the importance of being
-                        careful when sharing information or interacting with unfamiliar
-                        online sources. The experience strengthened my awareness of
-                        responsible and safe digital practices.
-                    </p>
-
-                    <p>
-                        <strong>Issued:</strong> 03/28/2025
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="certificate">
-
-                <div class="certificate-image">
-
-                    <img
-                        src="Certificate02_page-0001.jpg"
-                        alt="AIlam Mo Dapat Certificate"
-                    >
-
-                </div>
-
-
-                <div class="certificate-info">
-
-                    <span class="certificate-number">
-                        02
-                    </span>
-
-                    <h3>
-                        AIlam Mo Dapat: Leveraging the Use of AI Tools in Academic Writing
-                    </h3>
-
-                    <p>
-                        This certificate represents my participation in a discussion
-                        about the responsible use of artificial intelligence tools in
-                        academic writing. I learned how AI can be used to support
-                        different parts of the writing process, such as developing
-                        ideas, organizing information, improving clarity, and reviewing
-                        written work. The session also emphasized using AI responsibly
-                        while maintaining academic integrity, critical thinking, and
-                        originality in academic work.
-                    </p>
-
-                    <p>
-                        <strong>Issued:</strong> 03/26/2024
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="certificate">
-
-                <div class="certificate-image">
-
-                    <img
-                        src="Coursera VA8CWFN4EQ7Z_page-0001.jpg"
-                        alt="WordPress Certificate"
-                    >
-
-                </div>
-
-
-                <div class="certificate-info">
-
-                    <span class="certificate-number">
-                        03
-                    </span>
-
-                    <h3>
-                        Create a Website Using WordPress: Free Hosting & Sub-domain
-                    </h3>
-
-                    <p>
-                        This certificate reflects my experience in learning how to
-                        create and manage a website using WordPress. I learned how
-                        to work with WordPress as a content management system, set
-                        up free web hosting, and configure a sub-domain for publishing
-                        a website online. This experience helped me understand the
-                        basic process of taking a website from development to online
-                        deployment.
-                    </p>
-
-                    <p>
-                        <strong>Issued:</strong> 02/25/2024
-                    </p>
-
-                </div>
-
-            </div>
-
-
-        </div>
-
-    </div>
-
-
-</div>
-
-
-<footer class="footer">
-
-    <div class="footer-content">
-
-
-        <div class="footer-left">
-
-            <h2>Contact Me</h2>
-
-            <p>
-                Feel free to reach out to me through the contact
-                information below.
-            </p>
-
-
-            <div class="contact-item">
-
-                <strong>Email</strong>
-
-
-                <div class="contact-detail">
-
-                    <img src="gmail.png" alt="Gmail">
-
-                    <p>
-                        gabzeuspadilla@gmail.com
-                    </p>
-
-                </div>
-
-
-                <div class="contact-detail">
-
-                    <img src="gmail.png" alt="Gmail">
-
-                    <p>
-                        ghabrielpadilla@gmail.com
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="contact-item">
-
-                <strong>Location</strong>
-
-                <div class="contact-detail">
-
-                    <p>
-                        Los Baños, Laguna, Philippines
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <div class="footer-right">
-
-            <h2>Find Me Online</h2>
-
-
-            <div class="social-links">
-
-                <div class="social-link">
-
-                    <img src="github.png" alt="GitHub">
-
-                    <a href="#" target="_blank">
-                        GitHub
-                    </a>
-
-                </div>
-
-
-                <div class="social-link">
-
-                    <img src="linkedin.png" alt="LinkedIn">
-
-                    <a href="#" target="_blank">
-                        LinkedIn
-                    </a>
-
-                </div>
-
-
-                <div class="social-link">
-
-                    <img src="facebook.png" alt="Facebook">
-
-                    <a href="#" target="_blank">
-                        Facebook
-                    </a>
-
-                </div>
-
-
-                <div class="social-link">
-
-                    <img src="instagram.png" alt="Instagram">
-
-                    <a href="#" target="_blank">
-                        Instagram
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <div class="footer-role">
+                <h2>Inquire My Services</h2>
 
                 <p>
-                    • Aspiring Game Developer
+                    Interested in working with me? Fill out the form below
+                    and provide some details about your project.
+                </p>
+
+                <form id="inquiryForm">
+
+                    <label for="name">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                        required
+                    >
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                    <label for="service">
+                        Service
+                    </label>
+
+                    <select id="service" name="service" required>
+
+                        <option value="">
+                            Select a service
+                        </option>
+
+                        <option value="website">
+                            Website Development
+                        </option>
+
+                        <option value="web_design">
+                            Web Design
+                        </option>
+
+                        <option value="game_development">
+                            Consultation
+                        </option>
+
+                        <option value="other">
+                            Other
+                        </option>
+
+                    </select>
+
+                    <label for="message">
+                        Project Details
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        placeholder="Tell me about your project..."
+                        rows="5"
+                        required
+                    ></textarea>
+
+                    <button
+                        type="submit"
+                        class="submit-button"
+                    >
+                        Send Inquiry
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <div id="successMessage">
+
+                <h2>Thank You for Your Inquiry!</h2>
+
+                <p>
+                    Your inquiry has been received successfully. I will review
+                    your request and contact you through the email address you
+                    provided.
                 </p>
 
                 <p>
-                    • Bachelor of Science in Information Technology
-                </p>
-
-                <p>
-                    • Web and Mobile Application Development Major
+                    I appreciate your interest and look forward to getting in touch
+                    with you.
                 </p>
 
             </div>
@@ -548,71 +148,465 @@
     </div>
 
 
-    <div class="footer-bottom">
+    <div class="flex_body">
 
-        <p>
-            © 2026 Gabriel Zeus S. Padilla. All Rights Reserved.
-        </p>
+
+        <div id="section01">
+
+            <h2>About Me</h2>
+
+            <p>
+                I am an aspiring game developer and IT student who is interested in creating games
+                and learning new technologies. I enjoy working with computers, programming, and
+                designing digital experiences. I particularly enjoy tackling new concepts and theories,
+                taking the time to understand how and why things work and how they can be applied in
+                practical situations.
+
+                I also value communication and collaboration when working with others.
+                I am comfortable sharing ideas, listening to different perspectives,
+                and working with people from different backgrounds and skill levels.
+                I believe that good communication and teamwork are essential to turning ideas into
+                successful projects, and I am always willing to learn from others while contributing
+                my own skills and ideas.
+            </p>
+
+        </div>
+
+
+        <div id="section02">
+
+            <h2>My Skills</h2>
+
+            <div class="skills">
+
+                <div>HTML</div>
+                <div>CSS</div>
+                <div>JavaScript</div>
+                <div>Java</div>
+                <div>C#</div>
+                <div>PHP</div>
+                <div>Python</div>
+
+            </div>
+
+        </div>
+
+
+        <div id="section03">
+
+            <h2>My Education</h2>
+
+            <div class="education">
+
+                <div class="education-item">
+
+                    <div class="education-entry">
+
+                        <span class="education-year">
+                            2018 - 2022
+                        </span>
+
+                        <h3>
+                            Junior High School
+                        </h3>
+
+                        <p class="education-school">
+                            Los Baños National High School - Batong Malake
+                        </p>
+
+                    </div>
+
+
+                    <div class="education-entry">
+
+                        <span class="education-year">
+                            2022 - 2024
+                        </span>
+
+                        <h3>
+                            Senior High School
+                        </h3>
+
+                        <h4>
+                            Information and Communication Technology
+                        </h4>
+
+                        <p class="education-school">
+                            Laguna State Polytechnic University Senior High School -
+                            Los Baños Campus
+                        </p>
+
+                    </div>
+
+
+                    <div class="education-entry">
+
+                        <span class="education-year">
+                            2024 - Present
+                        </span>
+
+                        <h3>
+                            College
+                        </h3>
+
+                        <h4>
+                            Bachelor of Science in Information Technology -
+                            Web and Mobile Application Development
+                        </h4>
+
+                        <p class="education-school">
+                            Laguna State Polytechnic University - Los Baños Campus
+                            <br>
+                            College of Computer Science
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div id="section04">
+
+            <h2>My Certificates</h2>
+
+            <div class="certificates">
+
+
+                <div class="certificate">
+
+                    <div class="certificate-image">
+
+                        <img
+                            src="Certificate01_page-0001.jpg"
+                            alt="Rappler's #ScamAlert Forum Certificate"
+                        >
+
+                    </div>
+
+
+                    <div class="certificate-info">
+
+                        <span class="certificate-number">
+                            01
+                        </span>
+
+                        <h3>
+                            Rappler's #ScamAlert Forum
+                        </h3>
+
+                        <p>
+                            This certificate represents my participation in Rappler's
+                            #ScamAlert forum, which focused on increasing awareness about
+                            online scams and digital fraud. Through the forum, I gained a
+                            better understanding of how scams can be presented online,
+                            the warning signs to look out for, and the importance of being
+                            careful when sharing information or interacting with unfamiliar
+                            online sources. The experience strengthened my awareness of
+                            responsible and safe digital practices.
+                        </p>
+
+                        <p>
+                            <strong>Issued:</strong> 03/28/2025
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="certificate">
+
+                    <div class="certificate-image">
+
+                        <img
+                            src="Certificate02_page-0001.jpg"
+                            alt="AIlam Mo Dapat Certificate"
+                        >
+
+                    </div>
+
+
+                    <div class="certificate-info">
+
+                        <span class="certificate-number">
+                            02
+                        </span>
+
+                        <h3>
+                            AIlam Mo Dapat: Leveraging the Use of AI Tools in Academic Writing
+                        </h3>
+
+                        <p>
+                            This certificate represents my participation in a discussion
+                            about the responsible use of artificial intelligence tools in
+                            academic writing. I learned how AI can be used to support
+                            different parts of the writing process, such as developing
+                            ideas, organizing information, improving clarity, and reviewing
+                            written work. The session also emphasized using AI responsibly
+                            while maintaining academic integrity, critical thinking, and
+                            originality in academic work.
+                        </p>
+
+                        <p>
+                            <strong>Issued:</strong> 03/26/2024
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="certificate">
+
+                    <div class="certificate-image">
+
+                        <img
+                            src="Coursera VA8CWFN4EQ7Z_page-0001.jpg"
+                            alt="WordPress Certificate"
+                        >
+
+                    </div>
+
+
+                    <div class="certificate-info">
+
+                        <span class="certificate-number">
+                            03
+                        </span>
+
+                        <h3>
+                            Create a Website Using WordPress: Free Hosting & Sub-domain
+                        </h3>
+
+                        <p>
+                            This certificate reflects my experience in learning how to
+                            create and manage a website using WordPress. I learned how
+                            to work with WordPress as a content management system, set
+                            up free web hosting, and configure a sub-domain for publishing
+                            a website online. This experience helped me understand the
+                            basic process of taking a website from development to online
+                            deployment.
+                        </p>
+
+                        <p>
+                            <strong>Issued:</strong> 02/25/2024
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
 
     </div>
 
-</footer>
+
+    <footer class="footer">
+
+        <div class="footer-content">
 
 
-<script>
+            <div class="footer-left">
 
-const inquireButton = document.getElementById("inquireButton");
+                <h2>Contact Me</h2>
 
-const inquiryModal = document.getElementById("inquiryModal");
-
-const closeButton = document.querySelector(".close-button");
-
-const inquiryForm = document.getElementById("inquiryForm");
-
-const inquiryContent = document.getElementById("inquiryContent");
-
-const successMessage = document.getElementById("successMessage");
+                <p>
+                    Feel free to reach out to me through the contact
+                    information below.
+                </p>
 
 
-inquireButton.addEventListener("click", function() {
+                <div class="contact-item">
 
-    inquiryModal.style.display = "block";
+                    <strong>Email</strong>
 
-});
+                    <div class="contact-detail">
 
+                        <img src="gmail.png" alt="Gmail">
 
-closeButton.addEventListener("click", function() {
+                        <p>
+                            gabzeuspadilla@gmail.com
+                        </p>
 
-    inquiryModal.style.display = "none";
-
-});
-
-
-window.addEventListener("click", function(event) {
-
-    if (event.target === inquiryModal) {
-
-        inquiryModal.style.display = "none";
-
-    }
-
-});
+                    </div>
 
 
-inquiryForm.addEventListener("submit", function(event) {
+                    <div class="contact-detail">
 
-    event.preventDefault();
+                        <img src="gmail.png" alt="Gmail">
 
-    inquiryForm.reset();
+                        <p>
+                            ghabrielpadilla@gmail.com
+                        </p>
 
-    inquiryContent.style.display = "none";
+                    </div>
 
-    successMessage.style.display = "block";
+                </div>
 
-});
 
-</script>
+                <div class="contact-item">
 
+                    <strong>Location</strong>
+
+                    <div class="contact-detail">
+
+                        <p>
+                            Los Baños, Laguna, Philippines
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-right">
+
+                <h2>Find Me Online</h2>
+
+                <div class="social-links">
+
+                    <div class="social-link">
+
+                        <img src="github.png" alt="GitHub">
+
+                        <a href="#" target="_blank">
+                            GitHub
+                        </a>
+
+                    </div>
+
+
+                    <div class="social-link">
+
+                        <img src="linkedin.png" alt="LinkedIn">
+
+                        <a href="#" target="_blank">
+                            LinkedIn
+                        </a>
+
+                    </div>
+
+
+                    <div class="social-link">
+
+                        <img src="facebook.png" alt="Facebook">
+
+                        <a href="#" target="_blank">
+                            Facebook
+                        </a>
+
+                    </div>
+
+
+                    <div class="social-link">
+
+                        <img src="instagram.png" alt="Instagram">
+
+                        <a href="#" target="_blank">
+                            Instagram
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="footer-role">
+
+                    <p>
+                        • Aspiring Game Developer
+                    </p>
+
+                    <p>
+                        • Bachelor of Science in Information Technology
+                    </p>
+
+                    <p>
+                        • Web and Mobile Application Development Major
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Gabriel Zeus S. Padilla. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script>
+
+        const inquireButton = document.getElementById("inquireButton");
+
+        const inquiryModal = document.getElementById("inquiryModal");
+
+        const closeButton = document.querySelector(".close-button");
+
+        const inquiryForm = document.getElementById("inquiryForm");
+
+        const inquiryContent = document.getElementById("inquiryContent");
+
+        const successMessage = document.getElementById("successMessage");
+
+
+        inquireButton.addEventListener("click", function() {
+
+            inquiryModal.style.display = "block";
+
+        });
+
+
+        closeButton.addEventListener("click", function() {
+
+            inquiryModal.style.display = "none";
+
+        });
+
+
+        window.addEventListener("click", function(event) {
+
+            if (event.target === inquiryModal) {
+
+                inquiryModal.style.display = "none";
+
+            }
+
+        });
+
+
+        inquiryForm.addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            inquiryForm.reset();
+
+            inquiryContent.style.display = "none";
+
+            successMessage.style.display = "block";
+
+        });
+
+    </script>
 
 </body>
 
